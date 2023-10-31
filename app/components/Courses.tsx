@@ -25,7 +25,7 @@ export default function Courses() {
             {
                 courses.map((course) => {
                     return (
-                        <div className="bg-[#4d4d4d] rounded-md pb-2">
+                        <div key={course.title} className="bg-[#4d4d4d] rounded-md pb-2">
                             <a href="/curso_html.html">
                                 <img className="hover:scale-105" src={course.url} alt="" />
                                 <div className="text-white text-center">
